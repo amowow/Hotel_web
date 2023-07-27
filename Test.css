@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#about{
+    background-color: rgb(223, 222, 222);
+}
+
+#rooms{
+    background-color: rgb(223, 222, 222);
+}
+
+#contact{
+    background-color: rgb(223, 222, 222);
+}
+
+/* Updated styles for header and navbar */
+header {
+    background-color: #333;
+    padding: 30px 30px;
+    position: fixed; /* Make the header stay fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Ensures the navbar appears on top of other content */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the nav items */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffd700; /* Golden yellow on hover */
+    color: #333;
+}
+
+/* Add some spacing to the content so it's not hidden behind the navbar */
+/* Adjust the padding to your preference */
+main {
+    padding-top: 80px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+/* Increase font sizes for headings and text */
+h2 {
+    font-size: 41px;
+}
+
+h3 {
+    font-size: 29px;
+}
+
+p {
+    font-size: 23px;
+}
+
+.Welcoming {
+    background-image: url("Hotel\ looby.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 350px 0;
+    color: #fff;
+    font-size: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+}
+
+.About_us_1_image{
+    position: relative;
+    bottom: 350px;
+    left: 732px;
+}
+
+.About_us_2_image{
+    position: relative;
+    bottom: 550px;
+    right: 110px;
+}
+
+.P_1{
+    position: relative;
+    top: 200px;
+    width: 700px;
+
+}
+
+.P_2{
+position: relative;
+left: 735px;
+height: 500px;
+width: 700px;
+}
+
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Add the background image to the 'service' class */
+.service_1 {
+    position: relative;
+    background-image: url("Room\ Accommodation\ 1.jpg");
+    background-size: cover; /* Adjust the background size to cover the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    text-align: center;
+    padding: 250px 0;
+    color: #fff;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increase the minimum width for grid items */
+    grid-gap: 50px; /* Increase the gap between grid items */
+}
+
+.service_1 {
+    border: 1px solid #ddd;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.service_1 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Add the background image to the 'service' class */
+.service_2 {
+    position: relative;
+    background-image: url("Dining\ &\ Cuisine\ 1.jpg");
+    background-size: cover; /* Adjust the background size to cover the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    text-align: center;
+    padding: 250px 0;
+    color: #fff;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increase the minimum width for grid items */
+    grid-gap: 50px; /* Increase the gap between grid items */
+}
+
+.service_2 {
+    border: 1px solid #ddd;
+    padding: 40px;
+    text-align: center;
+}
+
+.service_2 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Add the background image to the 'service' class */
+.service_3 {
+    position: relative;
+    background-image: url("Spa\ &\ Wellness\ 1.jpg");
+    background-size: cover; /* Adjust the background size to cover the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    text-align: center;
+    padding: 250px 0;
+    color: #fff;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increase the minimum width for grid items */
+    grid-gap: 50px; /* Increase the gap between grid items */
+}
+
+.service_3 {
+    border: 1px solid #ddd;
+    padding: 40px;
+    text-align: center;
+}
+
+.service_3 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#backgroundImageContainer {
+    background-size: 100%; /* Increase the size of the background image */
+}
+
+#backgroundImageContainer2 {
+    background-size: 100%; /* Increase the size of the background image */
+}
+
+#backgroundImageContainer3 {
+    background-size: 100%; /* Increase the size of the background image */
+}
+
+
+/* Styles for the images */
+.img_5 {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* Maintain aspect ratio for images */
+    border-radius: 10px; /* Add rounded corners to the images */
+}
+
+/* Reset default margins and padding */
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the section */
+.rooms-section {
+    text-align: center;
+}
+
+/* Styles for the section heading */
+.section-heading {
+    margin-bottom: 20px;
+}
+
+/* Styles for the image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+/* Styles for the room images */
+.room-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Style for the input and textarea fields */
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Style for the textarea */
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+/* Style for the submit button */
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+.contact-form button:hover {
+    background-color: #555;
+}
+

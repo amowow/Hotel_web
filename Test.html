@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="Test.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="Welcoming">
+                <h1>Welcome to Our Hotel</h1>
+                <p>Experience comfort and luxury like never before.</p>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 style="text-align: center;">About Us</h2>
+                <br>
+                <p class="P_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ea tempore. Explicabo suscipit consequatur, velit doloremque enim aliquam atque eos voluptates nulla ut facere fugit beatae, temporibus culpa nesciunt maxime labore odio, inventore quibusdam doloribus blanditiis dolorum amet ad ab? Molestias exercitationem voluptatem hic enim neque sapiente, voluptate, ipsam nobis odit, asperiores expedita tenetur. Culpa itaque aliquam, dolores accusamus, consectetur reiciendis cum eum deleniti nostrum odit voluptatum pariatur ratione repudiandae, laborum quas laudantium corrupti a deserunt dolor ipsa amet ipsam! Facere, tenetur maxime quae eos cumque reiciendis inventore excepturi ducimus at velit? Neque, corrupti eius recusandae, voluptatibus magnam laudantium sequi quibusdam adipisci, dolorem iusto est natus itaque? Similique voluptate iste quisquam possimus provident enim laudantium ea maiores aut accusantium voluptates voluptatem delectus distinctio nemo sapiente soluta, itaque eligendi qui dolorem obcaecati rerum cupiditate? Aliquam saepe temporibus accusamus eos, maiores fugiat quae perspiciatis hic velit doloribus deleniti beatae qui nesciunt vel.</p>
+                <img class="About_us_1_image" src="About us group of people.jpg" width="800" height="600">
+                <p class="P_2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem officiis incidunt laboriosam fugit adipisci est repellat dolor praesentium veritatis corrupti molestias blanditiis atque consequuntur id autem consectetur, qui ipsam! Nisi cumque ipsam officiis atque tempora praesentium velit iusto doloremque, quaerat temporibus nulla et laudantium asperiores fugiat natus pariatur impedit veniam vitae! Dolores eos corrupti explicabo. Quibusdam commodi inventore dignissimos reprehenderit repudiandae assumenda ab sed modi at. Tenetur expedita, culpa praesentium itaque perspiciatis ut. Autem quae, molestiae quo molestias, possimus deserunt quasi culpa perferendis eaque minima nihil excepturi sit dolor! Recusandae, praesentium odio quia perspiciatis dolore rerum cumque accusamus numquam nisi, molestiae aperiam alias consequatur. Dolore, dolor rem. Enim, nobis autem, explicabo nesciunt ratione sit saepe qui id possimus, consectetur consequatur dolor eos adipisci nisi ducimus inventore sequi incidunt. Tenetur, natus optio! Modi, voluptate? Error facere hic natus ducimus temporibus laudantium, cupiditate iusto repellendus praesentium rem aspernatur quasi cumque mollitia necessitatibus?</p>
+                <img class="About_us_2_image" src="Hotel look.jpg" width="800" height="600">
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2 style="text-align: center;">Our Services</h2>
+                <br>
+                <div class="services-grid">
+                    <div class="service_1" id="backgroundImageContainer">
+                        <i class="fas fa-bed"></i>
+                        <h3>Room Accommodation</h3>
+                        <p>Discover our luxurious rooms with top-notch amenities.</p>
+                    </div>
+                    <script>
+                        const backgroundImageContainer = document.getElementById('backgroundImageContainer');
+                        const images = [
+                        'Room\ Accommodation\ 1.jpg',
+                        'Room\ Accommodation\ 2.jpg',
+                        'Room\ Accommodation\ 3.jpg',
+                        'Room\ Accommodation\ 4.jpg',
+                        'Room\ Accommodation\ 5.jpg'
+                        ];
+
+                    let currentImageIndex = 0;
+
+        function changeBackgroundImage() {
+            backgroundImageContainer.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+                }
+
+                    setInterval(changeBackgroundImage, 5000); // 5000ms = 5 seconds
+
+                    </script>
+
+                    <div class="service_2" id="backgroundImageContainer2">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Dining & Cuisine</h3>
+                        <p>Indulge in a variety of delectable dishes prepared by expert chefs.</p>
+                    </div>
+                    <script>
+                        const backgroundImageContainer2 = document.getElementById('backgroundImageContainer2');
+                        const images2 = [
+                        'Dining\ &\ Cuisine\ 1.jpg',
+                        'Dining\ &\ Cuisine\ 2.jpg',
+                        'Dining\ &\ Cuisine\ 3.jpg',
+                        'Dining\ &\ Cuisine\ 4.jpg',
+                        'Dining\ &\ Cuisine\ 5.jpg'
+                        ];
+
+                    let currentImageIndex2 = 0;
+
+        function changeBackgroundImage() {
+            backgroundImageContainer2.style.backgroundImage = `url('${images2[currentImageIndex2]}')`;
+            currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+                }
+
+                    setInterval(changeBackgroundImage, 5000); // 5000ms = 5 seconds
+
+                    </script>
+
+                    <div class="service_3" id="backgroundImageContainer3">
+                        <i class="fas fa-spa"></i>
+                        <h3>Spa & Wellness</h3>
+                        <p>Relax and rejuvenate your senses at our premium spa.</p>
+                    </div>
+                    <script>
+                        const backgroundImageContainer3 = document.getElementById('backgroundImageContainer3');
+                        const images3 = [
+                        'Spa\ &\ Wellness\ 1.jpg',
+                        'Spa\ &\ Wellness\ 2.jpg',
+                        'Spa\ &\ Wellness\ 3.jpg',
+                        'Spa\ &\ Wellness\ 4.jpg',
+                        'Spa\ &\ Wellness\ 5.jpg'
+                        ];
+
+                    let currentImageIndex3 = 0;
+
+        function changeBackgroundImage() {
+            backgroundImageContainer3.style.backgroundImage = `url('${images3[currentImageIndex3]}')`;
+            currentImageIndex3 = (currentImageIndex3 + 1) % images3.length;
+                }
+
+                    setInterval(changeBackgroundImage, 5000); // 5000ms = 5 seconds
+
+                    </script>
+
+                </div>
+            </div>
+        </section>
+
+
+    <section id="rooms">
+    <div class="container">
+        <section class="rooms-section">
+            <h2 class="section-heading">Rooms & Suites</h2>
+            <br>
+            <div class="image-grid">
+                <img class="room-image" src="Rooms & Suites 1.jpg">
+                <img class="room-image" src="Rooms & Suites 2.jpg">
+                <img class="room-image" src="Rooms & Suites 3.jpg">
+                <img class="room-image" src="Rooms & Suites 4.jpg">
+                <img class="room-image" src="Rooms & Suites 5.jpg">
+                <img class="room-image" src="Rooms & Suites 6.jpg">
+                <img class="room-image" src="Rooms & Suites 7.jpg">
+                <img class="room-image" src="Rooms & Suites 8.jpg">
+            </div>
+        </section>
+        
+    </div>
+</section>
+
+
+        <section id="gallery" >
+            <div class="container">
+                <h2 style="text-align: center;">Gallery</h2>
+                <br>
+                <section class="rooms-section">
+                    <div class="image-grid">
+                        <img class="room-image" src="Gallary 1.jpg">
+                        <img class="room-image" src="Gallary 2.jpg">
+                        <img class="room-image" src="Gallary 3.jpg">
+                        <img class="room-image" src="Gallary 4.jpg">
+                        <img class="room-image" src="Gallary 5.jpg">
+                        <img class="room-image" src="Gallary 6.jpg">
+                        <img class="room-image" src="Gallary 7.jpg">
+                        <img class="room-image" src="Gallary 8.jpg">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 style="text-align: center;">Contact</h2>
+                <br>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Font Awesome Icons (you need to include this in your project) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
